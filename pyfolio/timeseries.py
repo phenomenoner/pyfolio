@@ -1005,9 +1005,9 @@ def gen_drawdown_table(returns, top=10):
             df_drawdowns.loc[i, 'Duration'] = len(pd.date_range(peak,
                                                                 recovery,
                                                                 freq='B'))
-        df_drawdowns.loc[i, 'Peak date'] = (peak.to_pydatetime()
+        df_drawdowns.loc[i, 'Peak date'] = (pd.Timestamp(peak).to_pydatetime()
                                             .strftime('%Y-%m-%d'))
-        df_drawdowns.loc[i, 'Valley date'] = (valley.to_pydatetime()
+        df_drawdowns.loc[i, 'Valley date'] = (pd.Timestamp(valley).to_pydatetime()
                                               .strftime('%Y-%m-%d'))
         if isinstance(recovery, float):
             df_drawdowns.loc[i, 'Recovery date'] = recovery
