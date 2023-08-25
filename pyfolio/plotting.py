@@ -1471,7 +1471,7 @@ def plot_slippage_sensitivity(returns, positions, transactions,
     if ax is None:
         ax = plt.gca()
 
-    avg_returns_given_slippage = pd.Series()
+    avg_returns_given_slippage = pd.Series(dtype='float64')
     for bps in range(1, 100):
         adj_returns = txn.adjust_returns_for_slippage(returns, positions,
                                                       transactions, bps)
@@ -1497,7 +1497,7 @@ def plot_capacity_sweep(returns, transactions, market_data,
     txn_daily_w_bar = capacity.daily_txns_with_bar_data(transactions,
                                                         market_data)
 
-    captial_base_sweep = pd.Series()
+    captial_base_sweep = pd.Series(dtype='float64')
     for start_pv in range(min_pv, max_pv, step_size):
         adj_ret = capacity.apply_slippage_penalty(returns,
                                                   txn_daily_w_bar,
