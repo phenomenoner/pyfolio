@@ -1,5 +1,5 @@
 # **Hotfixed Pyfolio**
-**to keep up with recent versions of Pandas, Seaborn, and more**
+**Keep up with recent versions of Pandas, Seaborn, and more**
 
 # pyfolio
 
