@@ -721,7 +721,7 @@ def perf_stats(returns, factor_returns=None, positions=None,
         Performance metrics.
     """
 
-    stats = pd.Series()
+    stats = pd.Series(dtype='float64')
     for stat_func in SIMPLE_STAT_FUNCS:
         stats[STAT_FUNC_NAMES[stat_func.__name__]] = stat_func(returns)
 
