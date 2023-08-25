@@ -23,14 +23,6 @@ sheet analyzing a strategy:
 Also see [slides of a talk about
 pyfolio](https://nbviewer.jupyter.org/format/slides/github/quantopian/pyfolio/blob/master/pyfolio/examples/pyfolio_talk_slides.ipynb#/).
 
-## Installation
-
-To install pyfolio, run:
-
-```bash
-pip install pyfolio
-```
-
 #### Development
 
 For development, you may want to use a [virtual environment](https://docs.python-guide.org/en/latest/dev/virtualenvs/) to avoid dependency conflicts between pyfolio and other Python projects you have. To get set up with a virtual env, run:
@@ -61,21 +53,3 @@ jupyter notebook
 From the notebook list page, navigate to the pyfolio examples directory
 and open a notebook. Execute the code in a notebook cell by clicking on it
 and hitting Shift+Enter.
-
-
-## Questions?
-
-If you find a bug, feel free to [open an issue](https://github.com/quantopian/pyfolio/issues) in this repository.
-
-You can also join our [mailing list](https://groups.google.com/forum/#!forum/pyfolio) or
-our [Gitter channel](https://gitter.im/quantopian/pyfolio).
-
-## Support
-
-Please [open an issue](https://github.com/quantopian/pyfolio/issues/new) for support.
-
-## Contributing
-
-If you'd like to contribute, a great place to look is the [issues marked with help-wanted](https://github.com/quantopian/pyfolio/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22).
-
-For a list of core developers and outside collaborators, see [the GitHub contributors list](https://github.com/quantopian/pyfolio/graphs/contributors).
