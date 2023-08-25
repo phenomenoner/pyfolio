@@ -59,7 +59,7 @@ def var_cov_var_normal(P, c, mu=0, sigma=1):
     return P - P * (alpha + 1)
 
 
-@deprecated(msg=DEPRECATION_WARNING)
+# @deprecated(msg=DEPRECATION_WARNING)
 def max_drawdown(returns):
     """
     Determines the maximum drawdown of a strategy.
@@ -83,7 +83,7 @@ def max_drawdown(returns):
     return ep.max_drawdown(returns)
 
 
-@deprecated(msg=DEPRECATION_WARNING)
+# @deprecated(msg=DEPRECATION_WARNING)
 def annual_return(returns, period=DAILY):
     """
     Determines the mean annual growth rate of returns.
@@ -107,7 +107,7 @@ def annual_return(returns, period=DAILY):
     return ep.annual_return(returns, period=period)
 
 
-@deprecated(msg=DEPRECATION_WARNING)
+# @deprecated(msg=DEPRECATION_WARNING)
 def annual_volatility(returns, period=DAILY):
     """
     Determines the annual volatility of a strategy.
@@ -131,7 +131,7 @@ def annual_volatility(returns, period=DAILY):
     return ep.annual_volatility(returns, period=period)
 
 
-@deprecated(msg=DEPRECATION_WARNING)
+# @deprecated(msg=DEPRECATION_WARNING)
 def calmar_ratio(returns, period=DAILY):
     """
     Determines the Calmar ratio, or drawdown ratio, of a strategy.
@@ -160,7 +160,7 @@ def calmar_ratio(returns, period=DAILY):
     return ep.calmar_ratio(returns, period=period)
 
 
-@deprecated(msg=DEPRECATION_WARNING)
+# @deprecated(msg=DEPRECATION_WARNING)
 def omega_ratio(returns, annual_return_threshhold=0.0):
     """
     Determines the Omega ratio of a strategy.
@@ -198,7 +198,7 @@ def omega_ratio(returns, annual_return_threshhold=0.0):
                           required_return=annual_return_threshhold)
 
 
-@deprecated(msg=DEPRECATION_WARNING)
+# @deprecated(msg=DEPRECATION_WARNING)
 def sortino_ratio(returns, required_return=0, period=DAILY):
     """
     Determines the Sortino ratio of a strategy.
@@ -227,7 +227,7 @@ def sortino_ratio(returns, required_return=0, period=DAILY):
     return ep.sortino_ratio(returns, required_return=required_return)
 
 
-@deprecated(msg=DEPRECATION_WARNING)
+# @deprecated(msg=DEPRECATION_WARNING)
 def downside_risk(returns, required_return=0, period=DAILY):
     """
     Determines the downside deviation below a threshold
@@ -258,7 +258,7 @@ def downside_risk(returns, required_return=0, period=DAILY):
                             period=period)
 
 
-@deprecated(msg=DEPRECATION_WARNING)
+# @deprecated(msg=DEPRECATION_WARNING)
 def sharpe_ratio(returns, risk_free=0, period=DAILY):
     """
     Determines the Sharpe ratio of a strategy.
@@ -290,7 +290,7 @@ def sharpe_ratio(returns, risk_free=0, period=DAILY):
     return ep.sharpe_ratio(returns, risk_free=risk_free, period=period)
 
 
-@deprecated(msg=DEPRECATION_WARNING)
+# @deprecated(msg=DEPRECATION_WARNING)
 def alpha_beta(returns, factor_returns):
     """
     Calculates both alpha and beta.
@@ -316,7 +316,7 @@ def alpha_beta(returns, factor_returns):
     return ep.alpha_beta(returns, factor_returns=factor_returns)
 
 
-@deprecated(msg=DEPRECATION_WARNING)
+# @deprecated(msg=DEPRECATION_WARNING)
 def alpha(returns, factor_returns):
     """
     Calculates annualized alpha.
@@ -340,7 +340,7 @@ def alpha(returns, factor_returns):
     return ep.alpha(returns, factor_returns=factor_returns)
 
 
-@deprecated(msg=DEPRECATION_WARNING)
+# @deprecated(msg=DEPRECATION_WARNING)
 def beta(returns, factor_returns):
     """
     Calculates beta.
@@ -364,7 +364,7 @@ def beta(returns, factor_returns):
     return ep.beta(returns, factor_returns)
 
 
-@deprecated(msg=DEPRECATION_WARNING)
+# @deprecated(msg=DEPRECATION_WARNING)
 def stability_of_timeseries(returns):
     """
     Determines R-squared of a linear fit to the cumulative
@@ -386,7 +386,7 @@ def stability_of_timeseries(returns):
     return ep.stability_of_timeseries(returns)
 
 
-@deprecated(msg=DEPRECATION_WARNING)
+# @deprecated(msg=DEPRECATION_WARNING)
 def tail_ratio(returns):
     """
     Determines the ratio between the right (95%) and left tail (5%).
@@ -455,7 +455,7 @@ def normalize(returns, starting_value=1):
     return starting_value * (returns / returns.iloc[0])
 
 
-@deprecated(msg=DEPRECATION_WARNING)
+# @deprecated(msg=DEPRECATION_WARNING)
 def cum_returns(returns, starting_value=0):
     """
     Compute cumulative returns from simple returns.
@@ -482,7 +482,7 @@ def cum_returns(returns, starting_value=0):
     return ep.cum_returns(returns, starting_value=starting_value)
 
 
-@deprecated(msg=DEPRECATION_WARNING)
+# @deprecated(msg=DEPRECATION_WARNING)
 def aggregate_returns(returns, convert_to):
     """
     Aggregates returns by week, month, or year.
