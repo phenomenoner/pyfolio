@@ -1,4 +1,4 @@
-![pyfolio](https://media.quantopian.com/logos/open_source/pyfolio-logo-03.png "pyfolio")
+**Hotfixed Pyfolio to keep up with recent versions of Pandas, Seaborn, and more**
 
 # pyfolio
 
