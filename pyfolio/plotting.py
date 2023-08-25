@@ -802,7 +802,7 @@ def plot_rolling_returns(returns,
         oos_cum_returns = cum_rets.loc[cum_rets.index >= live_start_date]
     else:
         is_cum_returns = cum_rets
-        oos_cum_returns = pd.Series([])
+        oos_cum_returns = pd.Series([], dtype='float64')
 
     is_cum_returns.plot(lw=3, color='forestgreen', alpha=0.6,
                         label='Backtest', ax=ax, **kwargs)
